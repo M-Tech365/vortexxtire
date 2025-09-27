@@ -15,7 +15,7 @@ export function CTASection() {
             Ready to <span className="text-[#E9D342]">Upgrade</span> Your Irrigation?
           </h2>
           <p className="text-xl text-gray-300 mb-12">
-            Join thousands of farmers who've improved their field performance with Vortexx tires.
+            Join thousands of farmers who&apos;ve improved their field performance with Vortexx tires.
             Get a custom quote for your irrigation system today.
           </p>
 
