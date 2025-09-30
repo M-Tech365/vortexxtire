@@ -24,7 +24,7 @@ const features = [
   },
   {
     icon: Gauge,
-    title: "Low Pressure Design",
+    title: "Radials",
     description: "Engineered for optimal performance at lower pressures, reducing rutting and improving flotation.",
     color: "text-[#E9D342]",
     bgColor: "bg-[#E9D342]/10"
@@ -38,8 +38,8 @@ const features = [
   },
   {
     icon: Leaf,
-    title: "Eco-Friendly",
-    description: "Manufactured with sustainable materials and processes. Reduced soil impact preserves field health.",
+    title: "Soil Friendly",
+    description: "Designed to minimize soil compaction and protect field health. Gentle on your land, tough on the job.",
     color: "text-[#E9D342]",
     bgColor: "bg-[#E9D342]/10"
   }
@@ -57,7 +57,7 @@ export function FeaturesSection() {
             Engineered for <span className="text-[#188296]">Performance</span>
           </h2>
           <p className="text-xl text-gray-600">
-            Our tires combine cutting-edge technology with decades of agricultural expertise to deliver
+            Our tire and wheel assemblies combine cutting-edge technology with decades of agricultural expertise to deliver
             unmatched reliability in the field.
           </p>
         </div>

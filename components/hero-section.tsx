@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, Play } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 
 export function HeroSection() {
   return (
@@ -39,10 +39,13 @@ export function HeroSection() {
                 Explore Products
                 <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Link>
-              <button className="inline-flex items-center justify-center gap-2 bg-white border-2 border-gray-200 text-gray-700 px-8 py-4 rounded-full font-semibold hover:border-[#188296] hover:text-[#188296] transition-all group">
-                <Play className="h-5 w-5" />
-                Watch Video
-              </button>
+              <Link
+                href="#contact"
+                className="inline-flex items-center justify-center gap-2 bg-white border-2 border-gray-200 text-gray-700 px-8 py-4 rounded-full font-semibold hover:border-[#188296] hover:text-[#188296] transition-all group"
+              >
+                Contact Us
+                <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
             </div>
 
             {/* Stats */}
@@ -52,12 +55,12 @@ export function HeroSection() {
                 <div className="text-sm text-gray-600">Years Experience</div>
               </div>
               <div className="space-y-2">
-                <div className="text-3xl font-bold text-[#188296]">50%</div>
+                <div className="text-3xl font-bold text-[#188296]">✓</div>
                 <div className="text-sm text-gray-600">Less Rutting</div>
               </div>
               <div className="space-y-2">
-                <div className="text-3xl font-bold text-[#188296]">3x</div>
-                <div className="text-sm text-gray-600">Longer Lasting</div>
+                <div className="text-3xl font-bold text-[#188296]">✓</div>
+                <div className="text-sm text-gray-600">Longer Life</div>
               </div>
             </div>
           </div>
