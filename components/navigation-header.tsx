@@ -4,15 +4,16 @@ import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
+import { ContactFormDialog } from "@/components/contact-section"
 
 export function NavigationHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-  const navItems = [
+  const navItems: Array<{ label: string; href: string; external?: boolean; isDialog?: boolean }> = [
     { label: "Products", href: "#products" },
     { label: "Features", href: "#features" },
-    { label: "Technology", href: "#technology" },
-    { label: "Contact", href: "#contact" }
+    { label: "Axon Store", href: "https://dealer.axontire.com/irrigation_assemblies/brand=vortexx/", external: true },
+    { label: "Contact", href: "#contact", isDialog: true }
   ]
 
   return (
@@ -34,20 +35,23 @@ export function NavigationHeader() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <Link
-                key={item.label}
-                href={item.href}
-                className="text-gray-700 hover:text-[#188296] transition-colors font-medium"
-              >
-                {item.label}
-              </Link>
+              item.isDialog ? (
+                <ContactFormDialog key={item.label}>
+                  <button className="text-gray-700 hover:text-[#188296] transition-colors font-medium">
+                    {item.label}
+                  </button>
+                </ContactFormDialog>
+              ) : (
+                <Link
+                  key={item.label}
+                  href={item.href}
+                  className="text-gray-700 hover:text-[#188296] transition-colors font-medium"
+                  {...(item.external && { target: "_blank", rel: "noopener noreferrer" })}
+                >
+                  {item.label}
+                </Link>
+              )
             ))}
-            <Link
-              href="#contact"
-              className="bg-[#E9D342] text-gray-900 px-6 py-2.5 rounded-full font-semibold hover:bg-[#d4c03a] transition-colors"
-            >
-              Get Quote
-            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -68,22 +72,27 @@ export function NavigationHeader() {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-gray-100">
             {navItems.map((item) => (
-              <Link
-                key={item.label}
-                href={item.href}
-                className="block py-3 text-gray-700 hover:text-[#188296] transition-colors font-medium"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {item.label}
-              </Link>
+              item.isDialog ? (
+                <ContactFormDialog key={item.label}>
+                  <button
+                    className="block w-full text-left py-3 text-gray-700 hover:text-[#188296] transition-colors font-medium"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.label}
+                  </button>
+                </ContactFormDialog>
+              ) : (
+                <Link
+                  key={item.label}
+                  href={item.href}
+                  className="block py-3 text-gray-700 hover:text-[#188296] transition-colors font-medium"
+                  onClick={() => setIsMenuOpen(false)}
+                  {...(item.external && { target: "_blank", rel: "noopener noreferrer" })}
+                >
+                  {item.label}
+                </Link>
+              )
             ))}
-            <Link
-              href="#contact"
-              className="inline-block bg-[#E9D342] text-gray-900 px-6 py-2.5 rounded-full font-semibold hover:bg-[#d4c03a] transition-colors mt-4"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Get Quote
-            </Link>
           </div>
         )}
       </nav>

@@ -1,5 +1,4 @@
-import Link from "next/link"
-import { ArrowRight, Phone, Mail, MessageSquare } from "lucide-react"
+import { Phone } from "lucide-react"
 
 export function CTASection() {
   return (
@@ -19,38 +18,12 @@ export function CTASection() {
             Get a custom quote for your irrigation system today.
           </p>
 
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
-            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-white">
-              <Phone className="h-8 w-8 text-[#E9D342] mx-auto mb-4" />
-              <h3 className="font-semibold mb-2">Call Us</h3>
-              <p className="text-gray-300">1-800-VORTEXX</p>
+          <div className="flex justify-center">
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-8 text-white">
+              <Phone className="h-12 w-12 text-[#E9D342] mx-auto mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Call Us</h3>
+              <a href="tel:888-808-2398" className="text-2xl text-gray-300 hover:text-[#E9D342] transition-colors font-semibold">888-808-2398</a>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-white">
-              <Mail className="h-8 w-8 text-[#E9D342] mx-auto mb-4" />
-              <h3 className="font-semibold mb-2">Email</h3>
-              <p className="text-gray-300">sales@vortexxtire.com</p>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 text-white">
-              <MessageSquare className="h-8 w-8 text-[#E9D342] mx-auto mb-4" />
-              <h3 className="font-semibold mb-2">Live Chat</h3>
-              <p className="text-gray-300">Available 24/7</p>
-            </div>
-          </div>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="#contact"
-              className="inline-flex items-center justify-center gap-2 bg-[#E9D342] text-gray-900 px-8 py-4 rounded-full font-semibold hover:bg-[#d4c03a] transition-all hover:scale-105 group"
-            >
-              Get Your Free Quote
-              <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Link>
-            <Link
-              href="#calculator"
-              className="inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm border-2 border-white/20 text-white px-8 py-4 rounded-full font-semibold hover:bg-white/20 transition-all"
-            >
-              Calculate Savings
-            </Link>
           </div>
         </div>
       </div>
