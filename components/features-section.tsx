@@ -32,7 +32,7 @@ const features = [
   {
     icon: Wrench,
     title: "Easy Installation",
-    description: "Compatible with all major irrigation systems. Quick mount design saves time and reduces downtime.",
+    description: "Our full range of tire and wheel assemblies fit all major irrigation systems. Quick installation gets your pivot back to work fast, reducing costly downtime.",
     color: "text-[#188296]",
     bgColor: "bg-[#188296]/10"
   },
