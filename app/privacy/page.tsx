@@ -20,7 +20,7 @@ export default function PrivacyPolicy() {
           <div className="prose prose-lg max-w-none">
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">1. Introduction</h2>
             <p className="text-gray-700 mb-4">
-              Vortexx Tire Company ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website vortexxtire.com.
+              Vortexx Tire Company (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website vortexxtire.com.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">2. Information We Collect</h2>
@@ -81,14 +81,14 @@ export default function PrivacyPolicy() {
               Our website may contain links to third-party websites. We are not responsible for the privacy practices of these websites and encourage you to review their privacy policies.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">9. Children's Privacy</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">9. Children&apos;s Privacy</h2>
             <p className="text-gray-700 mb-4">
               Our website is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">10. Changes to This Privacy Policy</h2>
             <p className="text-gray-700 mb-4">
-              We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date.
+              We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the &quot;Last updated&quot; date.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">11. Contact Us</h2>

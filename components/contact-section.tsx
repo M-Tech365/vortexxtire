@@ -71,7 +71,7 @@ export function ContactFormDialog({ children }: ContactFormDialogProps) {
               Message Sent!
             </DialogTitle>
             <DialogDescription className="text-lg text-gray-600">
-              We'll get back to you as soon as possible.
+              We&apos;ll get back to you as soon as possible.
             </DialogDescription>
           </div>
         ) : (
@@ -111,7 +111,7 @@ export function ContactFormDialog({ children }: ContactFormDialogProps) {
                     Message Sent!
                   </h3>
                   <p className="text-gray-600">
-                    We'll get back to you as soon as possible.
+                    We&apos;ll get back to you as soon as possible.
                   </p>
                 </div>
               ) : (

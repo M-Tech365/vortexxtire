@@ -94,7 +94,7 @@ export default function CookiePolicy() {
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">7. Do Not Track Signals</h2>
             <p className="text-gray-700 mb-4">
-              Some browsers have a "Do Not Track" feature that lets you tell websites that you do not want to have your online activities tracked. At this time, we do not respond to browser "Do Not Track" signals.
+              Some browsers have a &quot;Do Not Track&quot; feature that lets you tell websites that you do not want to have your online activities tracked. At this time, we do not respond to browser &quot;Do Not Track&quot; signals.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">8. Updates to This Cookie Policy</h2>

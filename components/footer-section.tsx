@@ -46,7 +46,7 @@ export function FooterSection() {
                     <Link
                       href={link.href}
                       className="text-sm hover:text-[#E9D342] transition-colors"
-                      {...(link.external && { target: "_blank", rel: "noopener noreferrer" })}
+                      {...('external' in link && link.external && { target: "_blank", rel: "noopener noreferrer" })}
                     >
                       {link.label}
                     </Link>

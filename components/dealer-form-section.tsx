@@ -78,7 +78,7 @@ export function DealerFormDialog({ children }: DealerFormDialogProps) {
               Application Received!
             </DialogTitle>
             <DialogDescription className="text-lg text-gray-600">
-              Thank you for your interest in becoming a Vortexx dealer. We'll review your application and get back to you within 2-3 business days.
+              Thank you for your interest in becoming a Vortexx dealer. We&apos;ll review your application and get back to you within 2-3 business days.
             </DialogDescription>
           </div>
         ) : (

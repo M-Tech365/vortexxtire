@@ -34,12 +34,12 @@ export function AboutSection() {
 
             <AccordionItem value="radials">
               <AccordionTrigger className="text-lg font-semibold text-left">
-                Why don't farmers use radial tires on pivots?
+                Why don&apos;t farmers use radial tires on pivots?
               </AccordionTrigger>
               <AccordionContent className="text-[#343434] leading-relaxed">
                 <p>
-                  "Why don't farmers use radial tires on pivots? They already understand the benefits
-                  of radials on their other equipment." We asked ourselves. The obvious answer was price.
+                  &quot;Why don&apos;t farmers use radial tires on pivots? They already understand the benefits
+                  of radials on their other equipment.&quot; We asked ourselves. The obvious answer was price.
                 </p>
                 <p className="mt-4">
                   In 2014, Dawson Tire & Wheel, a Nebraska based company, built a radial pivot tire to
@@ -56,13 +56,13 @@ export function AboutSection() {
               </AccordionTrigger>
               <AccordionContent className="text-[#343434] leading-relaxed">
                 <p>
-                  The Vortexx Non-Directional Tire's maximized UV protection stands up to intense
+                  The Vortexx Non-Directional Tire&apos;s maximized UV protection stands up to intense
                   hot, dry conditions. With a 10-ply rating, the Vortexx non-directional tread results in
                   less soil disturbance along with improved self-cleaning versus directional tires.
                 </p>
                 <p className="mt-4">
                   There is no need to stock forward and reverse assemblies; the Non-directional tire takes
-                  care of both, as well as being able to interchange with regular 11.2-38's on a tower.
+                  care of both, as well as being able to interchange with regular 11.2-38&apos;s on a tower.
                 </p>
                 <p className="mt-4">
                   Easy replacement of the tire, tube, & wheel assembly. Available sizes: 11.2×38, 11.2×24,
